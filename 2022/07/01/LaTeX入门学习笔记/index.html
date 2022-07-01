@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 6.1.0">
+
+  
+    <meta name="description" content="Love technology, commit to open source, and become a geek">
+  
+
+  
+
+  
+    <meta name="author" content="develop-productivity">
+  
+
+  
+
+  
+
+  <title>LaTeX学习笔记 | Passionate about technology</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/huiyuan.ico">
+  
+
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(https://pic.imgdb.cn/item/62be4f9a1d64b0706661063b.png)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Passionate about technology
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">LaTeX学习笔记</h1>
+          <h2 class="title-sub-wrap">
+            <strong>develop-productivity</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2022-07-01T01:31:33.570Z" itemprop="datePublished">2022-07-01</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/source/categories/coding/">📒 coding</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/source/tags/LaTeX/">🏷️ LaTeX</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <h1 id="LaTeX学习笔记–简短入门"><a href="#LaTeX学习笔记–简短入门" class="headerlink" title="LaTeX学习笔记–简短入门"></a><code>LaTeX</code>学习笔记–简短入门</h1><h2 id="结构化文档"><a href="#结构化文档" class="headerlink" title="结构化文档"></a>结构化文档</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 导言区</span></span><br><span class="line"><span class="keyword">\documentclass</span>&#123;ctexart&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;name&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 正文区</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">hello <span class="keyword">\LaTeX</span>&#123;&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>标题：<code>\title, \author ,\data, \maketitle</code></li>
+<li>摘要: <code>abstract环境，\chapter</code>，</li>
+<li>目录: <code>tableofcontents</code></li>
+<li>章节: <code>\chapter,\section</code></li>
+<li>附录: <code>appendix</code></li>
+<li>文献: <code>bibliography</code></li>
+<li>索引: <code>printindex</code></li>
+</ul>
+<h3 id="相关命令"><a href="#相关命令" class="headerlink" title="相关命令"></a>相关命令</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>: <span class="comment">% 读入文档类(.cls)</span></span><br><span class="line"><span class="keyword">\usepackage</span>: <span class="comment">% 滴入一个格式文件，宏包(.sty)</span></span><br><span class="line"><span class="keyword">\include</span>: <span class="comment">% 分页，读入章节文件(.tex)</span></span><br><span class="line"><span class="keyword">\input</span>: <span class="comment">% 读入任意文件</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="语法结构"><a href="#语法结构" class="headerlink" title="语法结构"></a>语法结构</h3><p><strong>命令</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\cmd[opt]&#123;arg1&#125;&#123;arg2&#125; \\</span><br><span class="line">% 注释</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>[opt]</code>使可选参数，<code>&#123;arg&#125;</code>是参数.<code>\\</code>是换行符</p>
+<p><code>&#123;&#125;</code>可以改变一个状态或者说明作用域</p>
+<p><strong>环境</strong></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;env&#125;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">\end</span>&#123;env&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="正文文本"><a href="#正文文本" class="headerlink" title="正文文本"></a>正文文本</h3><ol>
+<li>多个空格输出也是一个空格。</li>
+<li>两个回车表示一个换行</li>
+</ol>
+<p><strong>符号：</strong></p>
+<p>下面这些符号都需要转义才能输出</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\# \$ \% \&#123; \&#125; </span><br></pre></td></tr></table></figure>
+
+<p><strong>公式：</strong></p>
+<ul>
+<li>行内公式需要<code>$ $</code>来组织。</li>
+<li>不带编号公式：用命令<code>\[ 内容\]</code></li>
+<li>带编号公式：用<code>equation</code>环境</li>
+<li>更复杂的：用<code>amsmath</code>宏包</li>
+</ul>
+<h4 id="数学结构："><a href="#数学结构：" class="headerlink" title="数学结构："></a><strong>数学结构：</strong></h4><ul>
+<li><p>上下划线与花括号：<code>\overline,\underline, \overbrace, \underbrace</code> 如：$\overbrace{dsdsfd}$</p>
+</li>
+<li><p>矩阵：使用<code>amsmath</code>专门的矩阵环境<code>matrix, pmatrix,bmatrix</code></p>
+</li>
+<li><p>数字单位  <code>\num: </code>科学计数法 <code>SI&#123;数值&#125;&#123;单位&#125;:</code>加入千分符 （都需要<code>siunitx</code>宏包）</p>
+</li>
+</ul>
+<h4 id="图表与浮动体"><a href="#图表与浮动体" class="headerlink" title="图表与浮动体"></a>图表与浮动体</h4><ul>
+<li>画表格 使用<code>tabular</code>环境。代码生成：<a target="_blank" rel="noopener" href="https://chengpengzhao.com/LaTeX_Table_Generator_zcp/">Create LaTeX tables online (chengpengzhao.com)</a> 其他的如长表格<code>longtable</code> 单元格处理：<code>multirow</code> </li>
+<li>插图：使用<code>graphic</code>宏包</li>
+<li>浮动体：不希望图表直接塞在文字里面。</li>
+</ul>
+<p>使用<code>table</code>环境或者<code>figure</code>环境</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><ul>
+<li><code>\verb</code>命令。如<code>\verb | code |</code></li>
+<li><code>berbatim</code>环境</li>
+<li>使用<code>listings</code>宏包或者<code>minted</code>宏包</li>
+</ul>
+<h3 id="自动化工具"><a href="#自动化工具" class="headerlink" title="自动化工具"></a>自动化工具</h3><p>!<img src="https://pic.imgdb.cn/item/62be4e961d64b070665faf05.png"></p>
+<ul>
+<li><p>目录</p>
+</li>
+<li><p>交叉引用</p>
+</li>
+<li><p>参考文献： 使用<code>bibtex</code>宏包</p>
+</li>
+<li><p>PDF连接和书签使用<code>hyperref</code></p>
+</li>
+</ul>
+<h2 id="设计文档格式"><a href="#设计文档格式" class="headerlink" title="设计文档格式"></a>设计文档格式</h2><p>当需要自己设计格式如：本科毕业论文，没有模板，需要照着要求自己设计。</p>
+<ul>
+<li>&#x3D;&#x3D;格式与内容分离&#x3D;&#x3D;: 不在意细节是LaTeX的一大卖点。</li>
+<li>使用与内容相关的命令与环境。如<code>\emph&#123;xxx&#125;</code>强调命令，而不是<code>textit&#123;xxx&#125;</code>斜体命令。</li>
+</ul>
+<h3 id="使用宏包"><a href="#使用宏包" class="headerlink" title="使用宏包"></a>使用宏包</h3><p>问题：使用第三方宏包，就产生了兼容性问题。</p>
+<p><strong>字体</strong></p>
+<p><img src="https://pic.imgdb.cn/item/62be4e961d64b070665faee8.png"></p>
+<p>其中，</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 以下Roman Family 罗马字体</span></span><br><span class="line"><span class="keyword">\rmfamily</span> xxx   <span class="keyword">\textrm</span>&#123;xxx&#125;</span><br><span class="line"><span class="comment">% 是无衬线字体</span></span><br><span class="line"><span class="keyword">\sffamily</span> 		<span class="keyword">\textsf</span>&#123;xxx&#125;</span><br><span class="line"><span class="comment">% 是打字机字体</span></span><br><span class="line"><span class="keyword">\ttfamily</span> 		<span class="keyword">\textff</span>&#123;xxx&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">% 字体</span></span><br><span class="line">&#123;<span class="keyword">\songti</span> 宋体&#125;</span><br><span class="line">&#123;<span class="keyword">\heiti</span> 黑体&#125;</span><br><span class="line">&#123;<span class="keyword">\fangsong</span> 仿宋&#125;</span><br><span class="line">&#123;<span class="keyword">\kaishu</span> 楷书&#125;</span><br><span class="line"><span class="comment">%字系列</span></span><br><span class="line"><span class="keyword">\textbf</span>&#123;粗体&#125;</span><br><span class="line"><span class="keyword">\textit</span>&#123;斜体&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>对齐</strong>：<code>\centering, \raggedleft</code></p>
+<p><strong>空白间距</strong>：<code>hspace, vspace</code></p>
+<p>版面布局：设计页面 <code>geometer</code> 设计页眉页码<code>fancyhdr</code>两个宏包</p>
+<p><strong>分页换行</strong>：<code>\linebreak</code></p>
+<p><strong>盒子：</strong><code>\fbox</code></p>
+<p><strong>在导言区单独设置格式</strong>：</p>
+<p>使用<code>tocloft</code>宏包设置目录格式。</p>
+<p><strong>使用自定义命令</strong>：<code>\ewcommand\prg[1]&#123;\&#125;</code></p>
+<h2 id="更新宏包"><a href="#更新宏包" class="headerlink" title="更新宏包"></a>更新宏包</h2><p>如果更新宏包慢的话可以设置仓库站点，加快速度</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tlmgr option repository ctan</span><br></pre></td></tr></table></figure>
+
+<p>其中ctan就是官方的源,也可以选择如下的源<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet/">清华大学</a></p>
+<p>方法是将上面的<code>ctan</code> 改变为所列出镜像的网站</p>
+<p>下面这个命令就是让宏包自己更新</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tlmgr update --self --all</span><br></pre></td></tr></table></figure>
+
+<h1 id="基础知识介绍"><a href="#基础知识介绍" class="headerlink" title="基础知识介绍"></a>基础知识介绍</h1><h3 id="纯文本编辑"><a href="#纯文本编辑" class="headerlink" title="纯文本编辑"></a>纯文本编辑</h3><p>用纯文本编辑器&#x3D;&#x3D;编辑&#x3D;&#x3D;，在命令行输入命令&#x3D;&#x3D;编译&#x3D;&#x3D;。</p>
+<p>现在的编译器如：texlive.编译方法为：<code>latex file_name.tex</code> 会输出.dvi文件.</p>
+<p>想要获得pdf文件可以使用<code>pdflatex file_name.tex</code>  。</p>
+<h3 id="现代tex引擎"><a href="#现代tex引擎" class="headerlink" title="现代tex引擎"></a>现代tex引擎</h3><ul>
+<li><code>pdflatex</code>和<code>pdftex</code> <strong>两个对应的预加载格式不一样。前者为<code>latex</code>格式。后者为<code>plaintex</code>格式</strong></li>
+<li><code>lualatex</code>和<code>luatex</code></li>
+<li><code>xelatex</code> 和 <code>xetex</code>  其中<code>xelatex</code> 命令是结合 <code>XƎTEX </code>引擎和<code>LATEX </code>格式的一个编译命令</li>
+</ul>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\chapter章   \section节  \subsection小节  \paragraph带题头段落</span><br><span class="line">\centering居中对齐  \emph强调   \verb原样输出  \url超链接</span><br><span class="line">\footnote脚注   \item列表条目  \caption标题   \inlcudegraphics插入图片</span><br><span class="line">\label标号   \cite引用参考文献   \引用图表公式等   \table表格   \figer图片   \equation公式</span><br><span class="line">\itemize无编号列表   \enumerate编号列表</span><br></pre></td></tr></table></figure>
+
+<h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><p>宏包的后缀为<code>.sty</code> .</p>
+<p>查看宏包手册的方法：<code>texdoc name</code> </p>
+<p>使用宏包的方法为：<code>\usepackage&#123;&#125;</code></p>
+<h4 id="找不带宏包的解决方法："><a href="#找不带宏包的解决方法：" class="headerlink" title="找不带宏包的解决方法："></a>找不带宏包的解决方法：</h4><ol>
+<li>自行下载</li>
+<li>重新安装发行版</li>
+</ol>
+<h3 id="文档类"><a href="#文档类" class="headerlink" title="文档类"></a>文档类</h3><p>文档类后缀<code>cls</code>。文档类的使用为<code>\documentclass&#123;&#125;</code></p>
+<p>文档类还可以加入一些参数。<code>[option]</code></p>
+<h3 id="编译时的其他选项"><a href="#编译时的其他选项" class="headerlink" title="编译时的其他选项"></a>编译时的其他选项</h3><p>**synctex :**用于正反向查找</p>
+<p><strong>.aux文件</strong> 辅助文件。需要二次编译的时候会出现。如第一次编译，会将某些东西存入.aux文件。所以当对源文件修改时，也应该对.aux文件进行修改。否则会报错。<strong>如产生这样的错误，把原来的.aux文件删除了就行了。</strong> </p>
+<h4 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h4><p>VSCode中的<code>latexmk</code> :会<strong>自动多次编译</strong>。在参考文献中会很便利。</p>
+<h1 id="入门基础文本到模板使用"><a href="#入门基础文本到模板使用" class="headerlink" title="入门基础文本到模板使用"></a>入门基础文本到模板使用</h1><h2 id="源文件"><a href="#源文件" class="headerlink" title="源文件"></a>源文件</h2><ul>
+<li>文档类别</li>
+<li>调入宏包</li>
+<li>撰写文档。只能有一个下面这段代码。</li>
+</ul>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br><span class="line"><span class="comment">% 在该代码段外的东西不会输出</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="源文件内容"><a href="#源文件内容" class="headerlink" title="源文件内容"></a>源文件内容</h3><ul>
+<li><p>普通文本</p>
+</li>
+<li><p>命令</p>
+<p>注：大小写敏感。命令分割可以用空格，回车，<code>&#123;&#125;</code>, <code>.</code>, <code>tab</code></p>
+</li>
+<li><p>环境：局部生效作用</p>
+</li>
+<li><p>分组：<code>&#123;&#125; </code>表示 如<code>&#123;\small xxxx&#125;</code></p>
+</li>
+<li><p>空白：</p>
+<p>空行：一个回车视为一个空行。</p>
+<p>空白：一个回车视为一个空白。</p>
+</li>
+<li><p>标点符号：英文</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">左引号 单：` 双：`` 。数字1键左边</span><br><span class="line">右引号 单‘ 双’‘</span><br><span class="line">横线：连字号 \hyphen</span><br><span class="line">	 段破折号 \en-dash  长破折号 \em-dash</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="各类文件"><a href="#各类文件" class="headerlink" title="各类文件"></a>各类文件</h2><h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>常用的符号 可以在symbols-a4文档里面有</p>
+<h3 id="数学符号"><a href="#数学符号" class="headerlink" title="数学符号"></a>数学符号</h3><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mathbb：blackboard bold，黑板粗体，那就是画两条，期望什么的都用</span><br><span class="line">mathbf：math boldface，表示矩阵，向量.这两种字体差别很大，用的都比较多</span><br><span class="line">mathcal：calligraphy（美术字），表示集合，分布这种</span><br><span class="line">mathrm：math roman， 罗马字体，罗马大教堂，方正</span><br><span class="line">mathnormal： 正常字体，<span class="built_in">$</span>A<span class="built_in">$</span>和<span class="built_in">$</span><span class="keyword">\mathnormal</span>&#123;A&#125;<span class="built_in">$</span>相同</span><br><span class="line">mathit： 斜体， italic，意大利(Italy)因为有比萨斜塔，所以导致了italic字体是这么个称呼？</span><br><span class="line">mathsf：sf 是 serif，非衬线</span><br><span class="line">mathtt：typewriter 打印机字体</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>$$</th>
+<th>\mathbb​</th>
+<th>\mathcal</th>
+<th>\mathfrak</th>
+<th>\mathrm</th>
+<th>\mathbf</th>
+<th>\mathsf</th>
+<th>\mathtt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>B</td>
+<td>$B$</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathcal{B}$</td>
+<td>$\mathfrak{B}$</td>
+<td>$\mathrm{B}$</td>
+<td>$\mathbf{B}$</td>
+<td>$\mathsf{B}$</td>
+<td>$\mathtt{B}$</td>
+</tr>
+<tr>
+<td>L</td>
+<td>$L$</td>
+<td>$\mathbb{L}$</td>
+<td>$\mathcal{L}$</td>
+<td>$\mathfrak{L}$</td>
+<td>$\mathrm{L}$</td>
+<td>$\mathbf{L}$</td>
+<td>$\mathsf{L}$</td>
+<td>$\mathtt{L}$</td>
+</tr>
+<tr>
+<td>W</td>
+<td>$W$</td>
+<td>$\mathbb{W}$</td>
+<td>$\mathcal{W}$</td>
+<td>$\mathfrak{W}$</td>
+<td>$\mathrm{W}$</td>
+<td>$\mathbf{W}$</td>
+<td>$\mathsf{W}$</td>
+<td>$\mathtt{W}$</td>
+</tr>
+</tbody></table>
+<h1 id="第四讲"><a href="#第四讲" class="headerlink" title="第四讲"></a>第四讲</h1><h3 id="使用thebibliography环境写参考文献"><a href="#使用thebibliography环境写参考文献" class="headerlink" title="使用thebibliography环境写参考文献"></a>使用thebibliography环境写参考文献</h3><p>参考lshort 第六章示例代码如下</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;ctexart&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">    <span class="keyword">\LaTeX</span>&#123;&#125; 入门可以参考的书籍为《<span class="keyword">\LaTeX</span>&#123;&#125;入门》<span class="keyword">\cite</span>&#123;liuhaiyang2013latex&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">\begin</span>&#123;thebibliography&#125;&#123;10&#125;</span><br><span class="line">        <span class="keyword">\bibitem</span>[1]&#123;刘海洋LaTeX&#125; 刘海洋. <span class="keyword">\newblock</span>  <span class="keyword">\LaTeX</span>&#123;&#125;入门 <span class="keyword">\allowbreak</span>[J]. <span class="keyword">\newblock</span> 电子工业出版社，北京，2013.</span><br><span class="line">        <span class="keyword">\bibitem</span>[2]&#123;mathematical-modeling&#125; 全国大学生数学建模竞赛论文规范(2013年7月修改).</span><br><span class="line">    <span class="keyword">\end</span>&#123;thebibliography&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="bib文件"><a href="#bib文件" class="headerlink" title="bib文件"></a>bib文件</h3><p>bib文件包含了</p>
+<ul>
+<li>bibkey 就相当于\cite{label} 中的label</li>
+<li>title :参考文献的标题</li>
+<li>author </li>
+<li>year</li>
+<li>….</li>
+</ul>
+<p>可以在谷歌学术、必应学术上获取内容</p>
+<h3 id="BIBTeX"><a href="#BIBTeX" class="headerlink" title="BIBTeX"></a>BIBTeX</h3><p>可以生成不同风格的参考文献</p>
+<p>仅维护<code>.bib</code>文件</p>
+<h3 id="biber"><a href="#biber" class="headerlink" title="biber"></a>biber</h3><p>和BIBTeX大同小异</p>
+<p>同：也维护<code>.bib</code> 文件</p>
+<p>异：编译步骤</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2022/07/01/LaTeX%E5%88%9D%E4%BD%93%E9%AA%8C/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">LaTeX初体验</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="https://pic.imgdb.cn/item/62bda7861d64b070669ddea9.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2022/06/30/%E5%9F%BA%E4%BA%8EHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">基于hexo搭建第一篇博客</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="/huiyuan.ico" class="soft-size--round soft-style--box" alt="Develop-productivity">
+    
+    
+      <h2>Develop-productivity</h2>
+    
+    
+      <p>Love technology, commit to open source, and become a geek</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>3</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        3
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/source/categories/coding/">
+            coding (2)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/source/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+            搭建博客 (1)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/source/tags/LaTeX/" style="font-size: 20px;" class="tags-cloud-10">LaTeX</a> <a href="/source/tags/blog/" style="font-size: 10px;" class="tags-cloud-0">blog</a> <a href="/source/tags/hexo/" style="font-size: 10px;" class="tags-cloud-0">hexo</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+          <a href="https://github.com/develop-productivity/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">develop-productivity</a></p>
+
+    
+
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>

@@ -33,9 +33,6 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
-  
 
   
 <link rel="stylesheet" href="/css/style.css">
@@ -47,7 +44,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://pic.imgdb.cn/item/62be50081d64b07066619143.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg)"></div>
   
 
   <!-- navbar -->
@@ -140,136 +137,8 @@
 <ul>
 <li>VSCode中键入 <code>ctrl+shift+p</code> 输入<code>settings</code> 找到打开工作区设置。注意不是<code>json</code> 然后找到<code>Code Action On Save</code> 点击<code>在settings.json中编辑</code> 输入以下代码</li>
 </ul>
-<pre><code class="json">// LaTeX Workshop
-    &quot;latex-workshop.latex.tools&quot;: [
-        &#123;
-            // 编译工具和命令
-            &quot;name&quot;: &quot;XeLaTeXmk&quot;,
-            &quot;command&quot;: &quot;latexmk&quot;,
-            &quot;args&quot;: [
-                &quot;-xelatex&quot;,
-                &quot;-synctex=1&quot;,
-                &quot;-shell-escape&quot;,
-                &quot;-interaction=nonstopmode&quot;,
-                &quot;-file-line-error&quot;,
-                &quot;%DOCFILE%&quot;
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;pdfLaTeXmk&quot;,
-            &quot;command&quot;: &quot;latexmk&quot;,
-            &quot;args&quot;: [
-                &quot;-pdflatex&quot;,
-                &quot;-synctex=1&quot;,
-                &quot;-shell-escape&quot;,
-                &quot;-interaction=nonstopmode&quot;,
-                &quot;-file-line-error&quot;,
-                &quot;%DOCFILE%&quot;
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;LuaLaTeXmk&quot;,
-            &quot;command&quot;: &quot;latexmk&quot;,
-            &quot;args&quot;: [
-                &quot;-lualatex&quot;,
-                &quot;-synctex=1&quot;,
-                &quot;-shell-escape&quot;,
-                &quot;-interaction=nonstopmode&quot;,
-                &quot;-file-line-error&quot;,
-                &quot;%DOCFILE%&quot;
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;LaTeXmk-DVIPDFMx&quot;,
-            &quot;command&quot;: &quot;latexmk&quot;,
-            &quot;args&quot;: [
-                &quot;-e&quot;,
-                &quot;$dvipdf=&#39;dvipdfmx %O -o %D %S&#39;&quot;,
-                &quot;-latex&quot;,
-                &quot;-pdfdvi&quot;,
-                &quot;-synctex=1&quot;,
-                &quot;-shell-escape&quot;,
-                &quot;-interaction=nonstopmode&quot;,
-                &quot;-file-line-error&quot;,
-                &quot;%DOCFILE%&quot;
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;upLaTeXmk-DVIPDFMx&quot;,
-            &quot;command&quot;: &quot;latexmk&quot;,
-            &quot;args&quot;: [
-                &quot;-e&quot;,
-                &quot;$dvipdf=&#39;dvipdfmx %O -o %D %S&#39;&quot;,
-                &quot;-latex=uplatex&quot;,
-                &quot;-pdfdvi&quot;,
-                &quot;-synctex=1&quot;,
-                &quot;-shell-escape&quot;,
-                &quot;-interaction=nonstopmode&quot;,
-                &quot;-file-line-error&quot;,
-                &quot;%DOCFILE%&quot;
-            ]
-        &#125;
-    ],
-    &quot;latex-workshop.latex.recipes&quot;: [
-        &#123;
-            &quot;name&quot;: &quot;XeLaTeXmk&quot;,
-            &quot;tools&quot;: [
-                &quot;XeLaTeXmk&quot;,
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;pdfLaTeXmk&quot;,
-            &quot;tools&quot;: [
-                &quot;pdfLaTeXmk&quot;,
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;LuaLaTeXmk&quot;,
-            &quot;tools&quot;: [
-                &quot;LuaLaTeXmk&quot;,
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;LaTeXmk-DVIPDFMX&quot;,
-            &quot;tools&quot;: [
-                &quot;LaTeX-DVIPDFMX&quot;,
-            ]
-        &#125;,
-        &#123;
-            &quot;name&quot;: &quot;upLaTeXmk-DVIPDFMX&quot;,
-            &quot;tools&quot;: [
-              &quot;upLaTeXmk-DVIPDFMX&quot;,
-            ]
-        &#125;,
-    ],
-    // 配置SyncTeX的正反向搜索
-    &quot;latex-workshop.view.pdf.viewer&quot;: &quot;external&quot;,
-    &quot;latex-workshop.view.pdf.ref.viewer&quot;:&quot;external&quot;,
-    &quot;latex-workshop.view.pdf.external.viewer.command&quot;: &quot;E:/some_smallsoftware/Viewer/PDF/sumatra/SumatraPDF/SumatraPDF.exe&quot;,
-    &quot;latex-workshop.view.pdf.external.viewer.args&quot;: [
-    &quot;-inverse-search&quot;,
-    &quot;\&quot;E:/MicroSoftware/Microsoft VS Code/Code.exe\&quot; \&quot;E:/MicroSoftware/Microsoft VS Code/resources/app/out/cli.js\&quot; -gr \&quot;%f\&quot;:\&quot;%l\&quot;&quot;,
-    &quot;%PDF%&quot;
-    ],
-    &quot;latex-workshop.view.pdf.external.synctex.command&quot;: &quot;E:/some_smallsoftware/Viewer/PDF/sumatra/SumatraPDF/SumatraPDF.exe&quot;,
-    &quot;latex-workshop.view.pdf.external.synctex.args&quot;: [
-      &quot;-forward-search&quot;,
-      &quot;%TEX%&quot;,
-      &quot;%LINE%&quot;,
-      &quot;%PDF%&quot;,
-    ],
-    // 其它配置
-    &quot;latex-workshop.showContextMenu&quot;: true, //右键菜单
-    &quot;latex-workshop.intellisense.package.enabled&quot;: true,    //自动完成命令或包
-    &quot;latex-workshop.latex.autoClean.run&quot;: &quot;onBuilt&quot;,    //自动清除辅助文件
-    &quot;latex-workshop.latex.autoBuild.run&quot;: &quot;never&quot;,  //禁止保存文件时自动编译 LaTeX 文件
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// LaTeX Workshop</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.latex.tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="comment">// 编译工具和命令</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;XeLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-xelatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-shell-escape&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdfLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-shell-escape&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;LuaLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-lualatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-shell-escape&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;LaTeXmk-DVIPDFMx&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-e&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;$dvipdf=&#x27;dvipdfmx %O -o %D %S&#x27;&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-latex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-pdfdvi&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-shell-escape&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;upLaTeXmk-DVIPDFMx&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-e&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;$dvipdf=&#x27;dvipdfmx %O -o %D %S&#x27;&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-latex=uplatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-pdfdvi&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-shell-escape&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.latex.recipes&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;XeLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;XeLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdfLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;pdfLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;LuaLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;LuaLaTeXmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;LaTeXmk-DVIPDFMX&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;LaTeX-DVIPDFMX&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;upLaTeXmk-DVIPDFMX&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">              <span class="string">&quot;upLaTeXmk-DVIPDFMX&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 配置SyncTeX的正反向搜索</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.view.pdf.viewer&quot;</span><span class="punctuation">:</span> <span class="string">&quot;external&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.view.pdf.ref.viewer&quot;</span><span class="punctuation">:</span><span class="string">&quot;external&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.view.pdf.external.viewer.command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;E:/some_smallsoftware/Viewer/PDF/sumatra/SumatraPDF/SumatraPDF.exe&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.view.pdf.external.viewer.args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;-inverse-search&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;\&quot;E:/MicroSoftware/Microsoft VS Code/Code.exe\&quot; \&quot;E:/MicroSoftware/Microsoft VS Code/resources/app/out/cli.js\&quot; -gr \&quot;%f\&quot;:\&quot;%l\&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;%PDF%&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.view.pdf.external.synctex.command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;E:/some_smallsoftware/Viewer/PDF/sumatra/SumatraPDF/SumatraPDF.exe&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.view.pdf.external.synctex.args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;-forward-search&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;%TEX%&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;%LINE%&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;%PDF%&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 其它配置</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.showContextMenu&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span> <span class="comment">//右键菜单</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.intellisense.package.enabled&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span>    <span class="comment">//自动完成命令或包</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.latex.autoClean.run&quot;</span><span class="punctuation">:</span> <span class="string">&quot;onBuilt&quot;</span><span class="punctuation">,</span>    <span class="comment">//自动清除辅助文件</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.latex.autoBuild.run&quot;</span><span class="punctuation">:</span> <span class="string">&quot;never&quot;</span><span class="punctuation">,</span>  <span class="comment">//禁止保存文件时自动编译 LaTeX 文件</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">&quot;code-runner.runInTerminal&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.message.convertFilenameEncoding&quot;</span><span class="punctuation">:</span> <span class="keyword">false</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;files.associations&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;*.json&quot;</span><span class="punctuation">:</span> <span class="string">&quot;properties&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
-    &quot;code-runner.runInTerminal&quot;: true,
-    &quot;latex-workshop.message.convertFilenameEncoding&quot;: false,
-    &quot;files.associations&quot;: &#123;
-        &quot;*.json&quot;: &quot;properties&quot;
-    &#125;
-</code></pre>
 <p>注意把软件路径改好就行了。</p>
 <hr>
 <p>:kissing_smiling_eyes::kissing_smiling_eyes::kissing_smiling_eyes::kissing_smiling_eyes::kissing_smiling_eyes::kissing_smiling_eyes::kissing_smiling_eyes::kissing_smiling_eyes:</p>
@@ -284,12 +153,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://pic.imgdb.cn/item/62bda7861d64b070669ddea9.png"></div>
+      <div class="card-cover" background-image-lazy data-img="https://pic.imgdb.cn/item/62be4f9a1d64b0706661063b.png"></div>
     
     <div class="card-text">
       
-        <a href="/2022/06/30/%E5%9F%BA%E4%BA%8EHexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">基于hexo搭建第一篇博客</h2>
+        <a href="/2022/07/01/LaTeX%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">LaTeX学习笔记</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -331,7 +200,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>2</span>
+        <span>3</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -365,7 +234,7 @@
       
         <li class="categorys-list-item">
           <a href="/source/categories/coding/">
-            coding (1)
+            coding (2)
           </a>
         </li>
       
@@ -388,7 +257,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/source/tags/LaTeX/" style="font-size: 10px;" class="tags-cloud-0">LaTeX</a> <a href="/source/tags/blog/" style="font-size: 10px;" class="tags-cloud-0">blog</a> <a href="/source/tags/hexo/" style="font-size: 10px;" class="tags-cloud-0">hexo</a>
+      <a href="/source/tags/LaTeX/" style="font-size: 20px;" class="tags-cloud-10">LaTeX</a> <a href="/source/tags/blog/" style="font-size: 10px;" class="tags-cloud-0">blog</a> <a href="/source/tags/hexo/" style="font-size: 10px;" class="tags-cloud-0">hexo</a>
     </div>
   </div>
 </section>
@@ -413,6 +282,8 @@
     </div>
      
     <p>&copy; 2022 <a href="/" target="_blank">develop-productivity</a></p>
+
+    
 
     
     <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
